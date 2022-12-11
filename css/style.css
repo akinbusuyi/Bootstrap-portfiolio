@@ -1,3 +1,90 @@
-body{
-  background-color: blue;
+@font-face {
+  font-family: "Santolo Beach";
+  src:url(../font/SANTOLO\ BEACH.otf) format("opentype")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}.logo{
+  font-family: "Santolo Beach";
+  font-size: 80px;
+}
+body {
+  background-image: url(../images/bodybackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+h1, h2 {
+  font-size: 25px bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+li {
+  font-size: 14px;
+  text-align: center;
+  padding: auto;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+li :hover {
+  color: black;
+}
+.customedNav {
+  background-color: #326789;
+  width: auto;
+  border: 2px solid black;
+  font-size: 20px;
+  color: black !important;
+  padding: 10px 10px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 5px;
+}
+.navbar-bar {
+  margin-left: auto;
+  margin-right: 0 !important;
+  list-style-type: none;
+}
+@media (min-width: 900px) {
+  .navbar-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .customedNav {
+    height: 100px;
+  }
+}
+.nav-item {
+  text-decoration: none;
+}
+.Hero {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: calc(100vh - 25px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 40px;
+  margin: auto;
+}
+img {
+  margin: 20px 20px;
+  justify-content: center;
 }
