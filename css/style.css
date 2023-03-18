@@ -14,10 +14,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  border: 0.5in;
 }
 
 a {
-  color: skyblue;
+  color:black;
   font-size: 20px;
 }
 
@@ -27,6 +28,11 @@ p {
   display: inline-flex;
   padding-left: 17.5%;
   margin: 0px 8%;
+}
+
+.navbar-nav{
+  border-radius: 0.5in;
+background-color: rgb(248, 118, 62);
 }
 
 #pageHeader {
@@ -151,7 +157,7 @@ td {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 200px;
+  height: 100px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url(images/bodybackground.png);
@@ -179,7 +185,9 @@ td {
   top: 70%; */
 }
 
-.h2 {
+
+.h2, 
+.h1 {
   background-color: skyblue;
   color: darkslategray;
   /* text-align: float-left; */
@@ -188,8 +196,8 @@ td {
 .heading {
   text-align: center;
   display: inline-block;
-  background-color: skyblue;
-  color: darkslategrey;
+  background-color: rgb(245, 139, 93);
+  color: rgb(30, 22, 18);
   padding: 1%;
   position: relative;
   top: 57%;
@@ -204,7 +212,7 @@ td {
   float: left;
   width: 20%;
   height: 100%;
-  color: darkslategray;
+  color: rgb(248, 118, 62);
   /* border-left: 3px solid darkslategray; */
 
 }
@@ -252,7 +260,7 @@ td {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  background-color: rgb(40, 56, 204);
+  background-color: rgb(249, 160, 71);
   padding: 5px 5% 0 5%;
   align-items: center;
 }
