@@ -7,74 +7,39 @@
   padding: 0;
   margin: 0;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-body {
+body{
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  border: 0.5in;
+  background-color: bisque;
 }
-
-a {
-  color:black;
+a{
+  color: tomato;
   font-size: 20px;
 }
+.jumbotron{
+  background-color: orangered;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 
-p {
+}
+.h1{
+  color: black;
+  font-size: 20px;
+}
+.h2{
+  align-content: center;
+}
+p{
   font-size: 16px;
   margin: 0;
   display: inline-flex;
   padding-left: 17.5%;
   margin: 0px 8%;
 }
-
-.navbar-nav{
-  border-radius: 0.5in;
-background-color: rgb(248, 118, 62);
-}
-
-#pageHeader {
-  background-color: skyblue;
-  color: darkslategray;
-  text-align: left;
-  padding-left: 5vw;
-  padding-right: 1vw;
-}
-
-.header {
-  padding: 10px;
-  background-color: darkslategrey;
-}
-
-.header h1 {
-  display: inline-block;
-  font-size: 48px;
-}
-
-.header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-size: 20px;
-}
-
-.header nav ul {
-  list-style-type: none;
-}
-
-.header nav ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-table,
-th,
-td {
-  border: 1px solid lightblue;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -93,136 +58,27 @@ td {
   vertical-align: bottom;
 }
 
-.highlight {
-  background-color: darkslategray;
-  color: white;
-}
-
-.highlight p {
-  background-color: lightblue;
-  color: black;
-}
-
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 300%;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  display: block;
-  color: lightblue;
-  padding: 1px;
-  text-align: center;
-  background-color: white;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  color: #FFFFFF;
-  background-color: slategray;
-}
-
-#aboutsection {
-  margin-bottom: 100px;
-  float: right;
+#contact-content {
   display: flex;
-}
-
-#about {
-  padding-left: 100px;
-}
-
-
-/* hero image */
-.recent-photo {
-  height: 200px;
-  /* display: flex; */
-  /* float: right; */
-}
-
-.hero-banner {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url(images/bodybackground.png);
-  background-size: cover;
-  background-position: center;
-  /* background-color: #003780a1; */
-  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-}
-
-.hero-banner div {
-  display: flex;
+  margin-top: 50px;
+  background-color: rgb(249, 131, 71);
+  padding: 5px 5% 0 5%;
   align-items: center;
 }
-
-.hero-banner div h2 {
-  /* display: inline-block; */
-  background-color: skyblue;
-  color: darkslategray;
-  padding-left: 1%;
-  padding-right: 1%;
-
-  /* vertical-align: middle; */
-  /* position: relative;
-  left: 56%;
-  top: 70%; */
-}
-
-
-.h2, 
-.h1 {
-  background-color: skyblue;
-  color: darkslategray;
-  /* text-align: float-left; */
-}
-
-.heading {
-  text-align: center;
-  display: inline-block;
-  background-color: rgb(245, 139, 93);
-  color: rgb(30, 22, 18);
-  padding: 1%;
-  position: relative;
-  top: 57%;
-
-}
-
-.page-section {
-  display: block;
-  margin-left: 20px;
-  padding: 20px;
-  clear: both;
-  float: left;
-  width: 20%;
-  height: 100%;
-  color: rgb(248, 118, 62);
-  /* border-left: 3px solid darkslategray; */
-
-}
-
-#contact {
+#aboutborder {
   display: flex;
-  align-items: center;
 }
 
-
+#skills,
+#projects,
+/* #contact-content, */
+#aboutsection {
+  margin: 0 5%;
+}
+#contactlinks li {
+  margin: 0 25px;
+}
 #contactlinks {
   display: flex;
   align-items: center;
@@ -235,32 +91,30 @@ td {
   /* bottom: 0;  */
 }
 
-#contactlinks li {
-  margin: 0 25px;
-}
-
-
-#contactsection {
-  /* float: right; */
+#contact {
   display: flex;
-}
-
-#skills,
-#projects,
-/* #contact-content, */
-#aboutsection {
-  margin: 0 5%;
-}
-
-#aboutborder {
-  display: flex;
-}
-
-#contact-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  background-color: rgb(249, 160, 71);
-  padding: 5px 5% 0 5%;
   align-items: center;
 }
+
+.hero-banner div h2 {
+  /* display: inline-block; */
+  background-color: rgb(182, 128, 96);
+  color:black;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  /* vertical-align: middle; */
+  /* position: relative;
+  left: 56%;
+  top: 70%; */
+}
+#aboutsection {
+  margin-bottom: 100px;
+  float: right;
+  display: flex;
+}
+
+#about {
+  padding-left: 100px;
+}
+
