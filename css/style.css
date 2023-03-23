@@ -1,45 +1,70 @@
-@font-face {
-  font-family: "Santolo Beach";
-  src: url(../font/SANTOLO\ BEACH.otf) format("opentype");
-}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  background-color: bisque;
 }
-a{
-  color: tomato;
-  font-size: 20px;
-}
-.jumbotron{
-  background-color: orangered;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
 
-}
-.h1{
-  color: black;
+a {
+  color: skyblue;
   font-size: 20px;
 }
-.h2{
-  align-content: center;
-}
-p{
+
+p {
   font-size: 16px;
   margin: 0;
   display: inline-flex;
   padding-left: 17.5%;
   margin: 0px 8%;
 }
+
+#pageHeader {
+  background-color: skyblue;
+  color: darkslategray;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 1vw;
+}
+
+.header {
+  padding: 10px;
+  background-color: darkslategrey;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+table,
+th,
+td {
+  border: 1px solid lightblue;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -58,27 +83,133 @@ td {
   vertical-align: bottom;
 }
 
-#contact-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  background-color: rgb(249, 131, 71);
-  padding: 5px 5% 0 5%;
-  align-items: center;
+.highlight {
+  background-color: darkslategray;
+  color: white;
 }
-#aboutborder {
+
+.highlight p {
+  background-color: lightblue;
+  color: black;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 300%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: lightblue;
+  padding: 1px;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: slategray;
+}
+
+#aboutsection {
+  margin-bottom: 100px;
+  float: right;
   display: flex;
 }
 
-#skills,
-#projects,
-/* #contact-content, */
-#aboutsection {
-  margin: 0 5%;
+#about {
+  padding-left: 100px;
 }
-#contactlinks li {
-  margin: 0 25px;
+
+
+/* hero image */
+.recent-photo {
+  height: 200px;
+  /* display: flex; */
+  /* float: right; */
 }
+
+.hero-banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #003780a1; */
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.hero-banner div {
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner div h2 {
+  /* display: inline-block; */
+  background-color: skyblue;
+  color: darkslategray;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  /* vertical-align: middle; */
+  /* position: relative;
+  left: 56%;
+  top: 70%; */
+}
+
+.h2 {
+  background-color: skyblue;
+  color: darkslategray;
+  /* text-align: float-left; */
+}
+
+.heading {
+  text-align: center;
+  display: inline-block;
+  background-color: skyblue;
+  color: darkslategrey;
+  padding: 1%;
+  position: relative;
+  top: 57%;
+
+}
+
+.page-section {
+  display: block;
+  margin-left: 20px;
+  padding: 20px;
+  clear: both;
+  float: left;
+  width: 20%;
+  height: 100%;
+  color: darkslategray;
+  /* border-left: 3px solid darkslategray; */
+
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
+
 #contactlinks {
   display: flex;
   align-items: center;
@@ -91,30 +222,32 @@ td {
   /* bottom: 0;  */
 }
 
-#contact {
+#contactlinks li {
+  margin: 0 25px;
+}
+
+
+#contactsection {
+  /* float: right; */
   display: flex;
+}
+
+#skills,
+#projects,
+/* #contact-content, */
+#aboutsection {
+  margin: 0 5%;
+}
+
+#aboutborder {
+  display: flex;
+}
+
+#contact-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: rgb(247, 113, 56);
+  padding: 5px 5% 0 5%;
   align-items: center;
 }
-
-.hero-banner div h2 {
-  /* display: inline-block; */
-  background-color: rgb(182, 128, 96);
-  color:black;
-  padding-left: 1%;
-  padding-right: 1%;
-
-  /* vertical-align: middle; */
-  /* position: relative;
-  left: 56%;
-  top: 70%; */
-}
-#aboutsection {
-  margin-bottom: 100px;
-  float: right;
-  display: flex;
-}
-
-#about {
-  padding-left: 100px;
-}
-
